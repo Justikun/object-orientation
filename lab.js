@@ -257,7 +257,8 @@ myFakeWizard.castSpell()
     and it won't be sold yet. 
 
     Create a method called 'sell'.
-    sell should be a function that changes the value of sold to true and prints the string: '{brand} {model} has been sold.'
+    sell should be a function that changes the value of sold to true and prints the string:
+     '{brand} {model} has been sold.'
     
     Create another method called 'changePrice'. We can use this 
     to change the price in case a phone isn't selling.
@@ -267,7 +268,26 @@ myFakeWizard.castSpell()
 */
 
 //Code Here
+class Phone {
+  constructor(brand, model, storage, color, price) {
+    this.brand = brand
+    this.model = model
+    this.storage = storage
+    this.color = color
+    this.price = price
+    this.sold = false
+  }
 
+  sell() {
+    this.sold = true
+    console.log(`${this.brand} ${this.model} has been sold.`)
+  }
+
+  changePrice(newPrice) {
+    console.log(`Changed price from ${this.price} -> ${newPrice}`)
+    this.price = newPrice
+  }
+}
   
 /*
     Next make three new phone instances using your class.
@@ -280,7 +300,9 @@ myFakeWizard.castSpell()
 */
 
 //Code Here
-
+let workGirlFriendsPhone = new Phone("Apple", "Iphone 13 Pro Max", 1000, "Silver", 1600)
+let personalPhone = new Phone("Nokia", "X34 Revived", 8, "Gray", 49)
+let workPhone = new Phone("Samsung", "Galaxy 10", 128, "Gray", 700)
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -289,7 +311,9 @@ myFakeWizard.castSpell()
 */ 
 
 //Code Here 
-
+workGirlFriendsPhone.changePrice(1500)
+personalPhone.changePrice(39)
+workPhone.changePrice(600)
 
 /*
   Now call the sell method on one of your other phone objects
@@ -298,7 +322,9 @@ myFakeWizard.castSpell()
 */
 
 //Code Here 
-
+workGirlFriendsPhone.sell()
+personalPhone.sell()
+workPhone.sell()
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
