@@ -7,8 +7,10 @@
 //Code here
 
 let me = {
-  name: "Justin",
-  age: "21"
+  title: "student",
+  firstName: "Justin",
+  lastName: "Lowry",
+  age: 21
 }
 
 
@@ -112,12 +114,14 @@ let {color, make, model, year} = carDetails
 
 function greeting( obj ) {
   //Code Here
-  
+  let {title, firstName, lastName} = obj
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
 
+console.log(greeting(me))
 
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
@@ -131,6 +135,10 @@ function greeting( obj ) {
 */
 
 //Code Here
+function totalPopulation(obj) {
+  let {utah, california, texas, arizona} = obj
+  return utah + california + texas + arizona
+}
 
 
 
@@ -145,6 +153,13 @@ function greeting( obj ) {
 */
 
 //Code Here
+function ingredients(obj) {
+  let {carb, fat, protein} = obj
+  let arr = []
+  for (key in obj) {
+    arr.push(key)
+  }
+}
 
 
 
