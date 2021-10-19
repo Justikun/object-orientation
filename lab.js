@@ -6,6 +6,10 @@
 
 //Code here
 
+let me = {
+  name: "Justin",
+  age: "21"
+}
 
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
@@ -16,6 +20,12 @@
 //and goodBoy/goodGirl (a boolean).
 
 //Code here
+let dog = {
+  name: "Alfred",
+  color: "black",
+  age: "2",
+  goodBoy: true
+}
 
 
 
@@ -23,14 +33,14 @@
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
 //Code here
-
+// console.log(dog.name)
 
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
-
+// console.log(dog['color'])
 
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
@@ -40,22 +50,38 @@
 */
 
 //Code here
+let favouriteThings = {
+  band: "The 1975",
+  food: "Potatoes",
+  person: "Me",
+  book: "Lessons From Experience",
+  movie: "The Judge",
+  holiday: "Chistmas"
+}
 
 
 /*
-  After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
+  After you've made your object, use bracket or dot notation to add another key named 'car'
+   with the value being your favorite car and then another key named 'show' with the value
+    being your favorite show.
 */
 
 //Code here
+favouriteThings.car = "AMG GT Black Series"
+favouriteThings['show'] = "New Girl"
 
-
+// console.log(favouriteThings)
 /*
-  Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
-  and change the value of the book key in your favoriteThings object to be 'Harry Potter'. (If they were either of those things already, change them to something else.)
+  Now use bracket or dot notation to change the value of the food key in your favoriteThings
+   object to be 'Chicken Nuggets'
+  and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
+   (If they were either of those things already, change them to something else.)
 */
 
 //Code here
-
+favouriteThings.food = "Chicken Nuggets"
+favouriteThings.book = "Harry Potter"
+// console.log(favouriteThings)
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -73,7 +99,7 @@ var carDetails = {
 */
 
 //Code Here
-
+let {color, make, model, year} = carDetails
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
