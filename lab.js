@@ -115,6 +115,11 @@ let {color, make, model, year} = carDetails
 function greeting( obj ) {
   //Code Here
   let {title, firstName, lastName} = obj
+/*
+  let title = obj.title
+  let firstName = obj.firstName
+*/
+
 
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -196,25 +201,48 @@ delete user.age
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
-  Create a class called 'Cat'. Make sure to call your constructor, and require these 3 parameters: name, age, color.
+  Create a class called 'Cat'. Make sure to call your constructor, and require these 3 parameters:
+   name, age, color.
   Outside of your class, create an instance of your cat, passing in whatever values you would like.
   Print the name of your cat instance using dot notation.
 */
 
 //Code here
+class Cat {
+  constructor(name, age, color) {
+    this.name = name
+    this.age = age
+    this.color = color
+  }
+}
 
-
+let myFakeCat = new Cat("sparky", 4, "light gray")
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
-  Create a class called 'Wizard'. Make sure to call your constructor, and require these 3 parameters: name, age, favoriteSpell.
-  Add a function to your Wizard class called castSpell. This function should print "{name} has cast {favoriteSpell}"
+  Create a class called 'Wizard'. Make sure to call your constructor, and require these 3 parameters:
+   name, age, favoriteSpell.
+  Add a function to your Wizard class called castSpell.
+   This function should print "{name} has cast {favoriteSpell}"
   Outside of your class, create an instance of your Wizard, passing in whatever values you would like.
   Call the castSpell function on the instance of your wizard.
 */
 
 //Code here
+class Wizard {
+  constructor(name, age, favouriteSpell) {
+    this.name = name,
+    this.age = age,
+    this.favouriteSpell = favouriteSpell
+  }
 
+  castSpell() {
+    console.log(`${this.name} has cast ${this.favouriteSpell}`)
+  }
+}
+
+let myFakeWizard = new Wizard("Gordan", 45, "Rain Shower")
+myFakeWizard.castSpell()
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
